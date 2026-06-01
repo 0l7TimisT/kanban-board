@@ -1,0 +1,141 @@
+{
+  "id": "sample-board-2026",
+  "title": "Ukázková nástěnka",
+  "columns": [
+    {
+      "id": "col-todo",
+      "title": "To Do",
+      "cards": [
+        {
+          "id": "card-1",
+          "title": "Naučit se Service Workers",
+          "description": "Pochopit lifecycle, cache strategies a registraci v hlavní aplikaci.",
+          "priority": "high",
+          "labels": [
+            { "name": "Učení", "color": "#3b82f6" },
+            { "name": "JavaScript", "color": "#f59e0b" }
+          ],
+          "deadline": "2026-06-20T00:00:00.000Z",
+          "checklist": [
+            { "text": "Přečíst dokumentaci", "done": false },
+            { "text": "Vyzkoušet cache API", "done": false },
+            { "text": "Implementovat offline režim", "done": false }
+          ],
+          "createdAt": "2026-05-10T08:00:00.000Z",
+          "archived": false
+        },
+        {
+          "id": "card-2",
+          "title": "Připravit prezentaci semestrální práce",
+          "description": "Slidy v PowerPointu, demo aplikace, příprava na otázky.",
+          "priority": "medium",
+          "labels": [
+            { "name": "Škola", "color": "#8b5cf6" }
+          ],
+          "deadline": "2026-06-30T00:00:00.000Z",
+          "checklist": [],
+          "createdAt": "2026-05-11T10:30:00.000Z",
+          "archived": false
+        },
+        {
+          "id": "card-3",
+          "title": "Koupit nové baterie pro FPV dron",
+          "description": "2-3 sady GNB 550mAh 2S, najít nejlepší poměr cena/výkon.",
+          "priority": "low",
+          "labels": [
+            { "name": "Nákup", "color": "#22c55e" }
+          ],
+          "deadline": null,
+          "checklist": [],
+          "createdAt": "2026-05-12T14:15:00.000Z",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "id": "col-progress",
+      "title": "In Progress",
+      "cards": [
+        {
+          "id": "card-4",
+          "title": "Implementovat Kanban Board",
+          "description": "Semestrální práce z KAJ - drag & drop, offline režim, OOP.",
+          "priority": "high",
+          "labels": [
+            { "name": "Škola", "color": "#8b5cf6" },
+            { "name": "JavaScript", "color": "#f59e0b" }
+          ],
+          "deadline": "2026-06-01T00:00:00.000Z",
+          "checklist": [
+            { "text": "HTML struktura", "done": true },
+            { "text": "CSS styly", "done": true },
+            { "text": "OOP třídy", "done": true },
+            { "text": "Drag & Drop", "done": false },
+            { "text": "Service Worker", "done": false },
+            { "text": "Testování", "done": false }
+          ],
+          "createdAt": "2026-05-08T09:00:00.000Z",
+          "archived": false
+        },
+        {
+          "id": "card-5",
+          "title": "Refaktoring DragControlleru",
+          "description": "Vytáhnout společnou logiku do helper metod, přidat touch podporu.",
+          "priority": "medium",
+          "labels": [
+            { "name": "Refactoring", "color": "#06b6d4" }
+          ],
+          "deadline": "2026-06-18T00:00:00.000Z",
+          "checklist": [],
+          "createdAt": "2026-05-09T11:20:00.000Z",
+          "archived": false
+        }
+      ]
+    },
+    {
+      "id": "col-done",
+      "title": "Done",
+      "cards": [
+        {
+          "id": "card-6",
+          "title": "Návrh datového modelu",
+          "description": "Třídy Board, Column, Card s vazbami a metodami.",
+          "priority": "high",
+          "labels": [
+            { "name": "Návrh", "color": "#ec4899" }
+          ],
+          "deadline": null,
+          "checklist": [],
+          "createdAt": "2026-05-05T08:00:00.000Z",
+          "archived": false
+        },
+        {
+          "id": "card-7",
+          "title": "Vytvoření Git repozitáře",
+          "description": "Inicializace, .gitignore, README, první commit.",
+          "priority": "low",
+          "labels": [
+            { "name": "DevOps", "color": "#84cc16" }
+          ],
+          "deadline": null,
+          "checklist": [],
+          "createdAt": "2026-05-04T16:00:00.000Z",
+          "archived": false
+        },
+        {
+          "id": "card-8",
+          "title": "Wireframe v Figmě",
+          "description": "Low-fi prototyp všech stránek aplikace.",
+          "priority": "medium",
+          "labels": [
+            { "name": "Design", "color": "#ef4444" }
+          ],
+          "deadline": null,
+          "checklist": [],
+          "createdAt": "2026-05-03T13:45:00.000Z",
+          "archived": false
+        }
+      ]
+    }
+  ]
+}

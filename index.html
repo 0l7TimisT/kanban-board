@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kanban Board - správa úkolů pomocí drag & drop">
+  <meta name="theme-color" content="#6366f1">
+  <title>Kanban Board</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>🗂 Kanban Board</h1>
+    <div class="header-controls">
+      <input type="search" id="search-input" placeholder="Hledat úkoly..." aria-label="Vyhledávání">
+      <select id="filter-priority" aria-label="Filtr priority">
+        <option value="">Všechny priority</option>
+        <option value="high">🔴 Vysoká</option>
+        <option value="medium">🟡 Střední</option>
+        <option value="low">🟢 Nízká</option>
+      </select>
+      <nav class="main-nav">
+        <a href="#board" class="nav-link active" data-page="board">Nástěnka</a>
+        <a href="#archive" class="nav-link" data-page="archive">Archiv</a>
+        <a href="#stats" class="nav-link" data-page="stats">Statistiky</a>
+        <a href="#settings" class="nav-link" data-page="settings">Nastavení</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app-content">
+    <!-- Obsah stránek se renderuje dynamicky -->
+  </main>
+
+  <footer class="app-footer">
+    <div class="history-controls">
+      <button id="btn-undo" aria-label="Zpět" disabled>↩️ Undo</button>
+      <button id="btn-redo" aria-label="Vpřed" disabled>↪️ Redo</button>
+    </div>
+    <div class="status">
+      <span id="connection-status">Online ●</span>
+      <span>v1.0.0</span>
+    </div>
+  </footer>
+
+  <template id="column-template">
+    <section class="column">
+      <header class="column-header">
+        <h2 class="column-title" contenteditable="true"></h2>
+        <span class="card-count">0</span>
+        <button class="btn-delete-column" aria-label="Smazat sloupec">🗑️</button>
+      </header>
+      <div class="cards-container"></div>
+      <button class="btn-add-card">+ Přidat kartu</button>
+    </section>
+  </template>
+
+  <div id="modal-overlay" class="modal-overlay hidden">
+    <div class="modal" role="dialog" aria-modal="true">
+      <header class="modal-header">
+        <h2 id="modal-title">Upravit úkol</h2>
+        <button id="btn-close-modal" aria-label="Zavřít">✕</button>
+      </header>
+      <div id="modal-content" class="modal-content">
+        <!-- Obsah modalu se generuje dynamicky -->
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
